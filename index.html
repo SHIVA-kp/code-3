@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reebok India - Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(122, 53, 53);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #339680;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(39, 38, 38);
+            font-weight: bold;
+        }
+
+        .auth a {
+            text-decoration: none;
+            color: rgb(52, 52, 124);
+            margin-left: 15px;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hero .cta {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cta h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta .btn {
+            padding: 10px 20px;
+            background-color: rgb(15, 101, 151);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .categories {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .categories h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .category-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .category-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .category-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .category-item p {
+            margin-top: bold;
+        }
+
+        footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer a {
+            color: rgb(12, 92, 146);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://reebok.abfrl.in/" alt="Reebok India">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Stores</a></li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <a href="#">Sign In</a> | <a href="#">Sign Up</a>
+        </div>
+    </header>
+
+    <section class="hero">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGMnwU2NeU_Ew_jNM4kSBuSscRvH3esH8kg&s" alt="Hero Image">
+      <div class="cta">
+        <h1>Unleash Your Potential</h1>
+        <p>Discover Our latest collection</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-list">
+            <div class="category-item">
+                <img src="data:image/jpeg;base64,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" alt="shoes">
+                <p>Apparel</p>
+            </div>
+            <div class="category-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ1ak4EWMognOlSeThrKX67_32Xymfw_t7Qw&s" alt="Accessories">
+                <p>Accessories</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Reebok India</p>
+        <p><a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
